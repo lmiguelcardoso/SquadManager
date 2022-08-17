@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Login";
+}
+<link href="~/css/login.css" rel="stylesheet" />
+
+<section>
+    <h1>Autenticação</h1>
+    <form>
+        <input type="text" id="email" name="email" placeholder="Username/Email" />
+        <input type="password" id="password" name="password" placeholder="Senha"/>
+        <a href="">Esqueceu a senha?</a>
+
+        <button type="submit" onclick="login(event)">Login</button>
+
+    </form>
+    <label>
+        Não tem conta?
+        <a href="/login/signup">Crie aqui!</a>
+    </label>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="~/js/login.js"></script>
